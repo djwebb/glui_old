@@ -1199,6 +1199,7 @@ protected:
 private:
     int last_item;
     GLUI_String file;
+    GLUI_String list_filter;
     int allow_change_dir;
 
 };
