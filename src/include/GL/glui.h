@@ -1141,6 +1141,19 @@ protected:
 
 /************************************************************/
 /*                                                          */
+/*                   List class - JVK                       */
+/*                                                          */
+/************************************************************/
+
+class GLUIAPI GLUI_List_Item : public GLUI_Node
+{
+public:
+    GLUI_String text;
+    int         id;
+};
+
+/************************************************************/
+/*                                                          */
 /*               File Browser class (container)             */
 /*                         JVK                              */
 /************************************************************/
@@ -1201,6 +1214,7 @@ private:
     GLUI_String file;
     GLUI_String list_filter;
     int allow_change_dir;
+    GLUI_List_Item  *local_list;
 
 };
 
@@ -2090,19 +2104,6 @@ protected:
     void common_construct(
         GLUI_Node *parent, GLUI_String *live_var,
         bool scroll, int id, GLUI_CB callback);
-};
-
-/************************************************************/
-/*                                                          */
-/*                   List class - JVK                       */
-/*                                                          */
-/************************************************************/
-
-class GLUIAPI GLUI_List_Item : public GLUI_Node
-{
-public:
-    GLUI_String text;
-    int         id;
 };
 
 /************************************************************/
