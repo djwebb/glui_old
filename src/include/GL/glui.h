@@ -1216,6 +1216,13 @@ private:
     int allow_change_dir;
     GLUI_List_Item  *local_list;
 
+    int add_list_item(GLUI_List_Item *list_item,
+                              int id, const char *text);
+    int delete_list_item(GLUI_List_Item *list_item);
+    int delete_list_all(GLUI_List_Item *local_list);
+    int copy_list(GLUI_List_Item p1, GLUI_List_Item p2);
+    int print_list_all(GLUI_List_Item *local_list);
+
 };
 
 /************************************************************/
