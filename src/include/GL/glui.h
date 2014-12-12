@@ -1191,6 +1191,8 @@ public:
     void set_h(int h);
     const char* get_file() { return file.c_str(); }
     void set_allow_change_dir(int c) { allow_change_dir = c; }
+    void set_filter(const char *string);
+    const char* filter_cstr();
 
 protected:
     void common_init()
@@ -1207,6 +1209,7 @@ protected:
         name         = "";
         current_dir  = ".";
         file         = "";
+        list_filter  = "";
     };
 
 private:
