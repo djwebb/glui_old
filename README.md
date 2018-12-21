@@ -1,7 +1,8 @@
 glui
 ====
 
-GLUI User Interface Library
+This contains 'simple1' which is my branch of the original GLUI User Interface Library.  
+It is now only of historical interest because the original GLUI repository has now been relaced.
 
 simple_1 includes changes to correct the behaviour of and improve the FileBrowser.
 It includes:
